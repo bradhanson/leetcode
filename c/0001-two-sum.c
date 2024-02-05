@@ -15,7 +15,7 @@ hash_table *hash = NULL, *elem, *tmp;
 int* twoSum(int* nums, int numsSize, int target, int* returnSize){       
     int* res = calloc((*returnSize = 2), sizeof(int));
 
-	for(int i = 0; i < numsSize; ++i){
+	for(int i = 0; i < numsSize; i++){
 		int k = target - nums[i];
         
         HASH_FIND_INT(hash, &k, elem); // Look for the item in hash table
